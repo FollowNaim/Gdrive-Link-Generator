@@ -64,6 +64,9 @@ body{
  border-radius: 5px;
  color: #fff;
 }
+.finalResult{
+ margin-top: 5%;
+}
 .finalResult textarea{
  background: #fff;
  margin-top: 5%;
