@@ -89,6 +89,15 @@ body{
  margin-left: 15%;
  margin-right: 5%;
 }
+footer{
+ text-align: center;
+ color: #fff;
+ margin-top: 5vh;
+}
+footer a{
+ text-decoration: none;
+ color: red;
+}
 @media (min-width:672px){
  .content button{
   margin-left: 3%;
