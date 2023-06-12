@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+}
+body{
+ background: #11143E;
+}
+.container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.wrapper{
+ background: #fff;
+ width: 85%;
+ height: 24vh;
+ border-radius: 7px;
+ margin-top: 20vh;
+ padding-top: 3%;
+ overflow: hidden;
+ transition: 0.4s all ease;
+}
+.wrapper.active{
+ height: 30vh;
+}
+.wrapper h3{
+ text-transform: uppercase;
+ 
+ background: whitesmoke;
+ text-align: center;
+ color: #177E29;
+}
+.wrapper.active .content{
+ display: none;
+}
+.content input{
+ margin-left: 10%;
+ text-align: center;
+ height: 40px;
+ border: none;
+ outline: none;
+ border: 1px dashed #3DB02D;
+ border-radius: 2px;
+}
+.content.error #givenlink{
+ border: 2px solid red;
+}
+.content.error #givenlink::plceholder{
+ color: red;
+}
+.content input::placeholder{
+ text-transform: uppercase;
+ font-weight: bold;
+}
+.content button{
+ margin-top: 5%;
+ margin-left: 35%;
+ border: none;
+ outline: none;
+ width: 100px;
+ height: 35px;
+ background: #184489;
+ border-radius: 5px;
+ color: #fff;
+}
+.finalResult textarea{
+ background: #fff;
+ margin-top: 5%;
+ margin-left: 13%;
+ height: 60px;
+ border: 1px solid black;
+ border-radius: 2px;
+}
+.sharing button{
+ border: none;
+ outline: none;
+ width: 100px;
+ height: 35px;
+ background: #184489;
+ border-radius: 5px;
+ color: #fff;
+ margin-top: 5%;
+}
+.copy{
+ margin-left: 15%;
+ margin-right: 5%;
+}
+@media (min-width:672px){
+ .content button{
+  margin-left: 3%;
+ }
+ .copy{
+  margin-left: 14%;
+ }
+ .main{
+  margin-left: 20%;
+ }
+ .finalResult{
+  margin-top: 10%;
+ }
+ .wrapper h3{
+  margin-left: -40%;
+ }
+ .wrapper{
+  height: 250px;
+  width: 80%;
+ }
+ .wrapper.active{
+  height: 350px;
+ }
+}
