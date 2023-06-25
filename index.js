@@ -15,8 +15,9 @@ submit.addEventListener("click",()=>{
  
  //make expression for checking link
  
- var driveFileRegex = /^https:\/\/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)\/view/;
+ var driveFileRegex = /^https:\/\/drive\.google\.com/;
 if(value === driveUrl || value.match(driveFileRegex)){
+ console.log("if working");
  wrapper.classList.add("active")
  const link = input.value;
  
